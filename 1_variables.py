@@ -84,4 +84,16 @@ name = "Mona"
 age = 25
 
 # without interpolation
-print("My name is" +name+ "and my age is" +age)
+print("My name is " +name+ " and my age is" ,age)
+print("My name is" ,name+ " and my age is" ,age)
+
+print("My name is" ,name+ "," "my age is" ,age ,"and my age after 5 years is" ,age+5) 
+print("My name is" ,name+ "," "my age is" ,age ,"and my age before 5 years is" ,age-5) 
+
+
+# with interpolation
+
+print("My name is {name} and my age is {age}")
+print(f"My name is {name} and my age is {age}")  # f is a string literal,tells python string contains variables
+print(f"My name is {name} and my age is {age+5}")   # or expressions inside {} .
+print(f"My name is {name} and my age is {age-5}")
